@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  margin: 0 auto;
+  display: flex;
+}
+.menu {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 4em;
+  background-color:red;
+}
+.left-heading {
+  padding: 1em;
+  background-color: #f2f2f2;
+  /* justify-content: space-between; */
+  width: 70%;
+}
+
+.right-heading {
+  padding: 1em;
+  background-color: #f2f2f2;
+  justify-content: space-between;
+  width: 30%;
+}
+.heading1,
+.heading2 {
+  width: 100%;
+  box-shadow: 1px 1px 9px 1px #0004;
+}
+.heading1 > img {
+  width: 100%;
+}
+
+.heading2 > img {
+  width: 100%;
+}
+.left-heading > .heading1 {
+  background-color: white;
+  gap: 1em;
+  margin-bottom: 3em;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.left-heading > .heading2 {
+  background-color: white;
+}
+.right-heading > .heading1 {
+  width: 100%;
+  background-color: white;
+  margin-bottom: 3em;
+}
+.right-heading,
+.left-heading,
+.text {
+  padding: 1em;
+}
+.right-heading > .heading2 {
+  width: 100%;
+  background-color: white;
+}
+.text > .btn {
+  padding: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.right-heading > .heading2 {
+  padding: 1em;
+}
+.head {
+  background-color: burlywood;
+  width: 100%;
+  padding: 1rem;
+}
+
+.heading3 {
+  width: 100%;
+  margin-top: 2rem;
+  box-shadow: 1px 1px 9px 1px #0004;
+}
+.tag {
+  background-color: #e6e6e6;
+  padding: 1.5rem 1rem;
+  font-size: larger;
+}
+.tags {
+  width: 100%;
+  background-color: #fff;
+}
+
+.tags ul {
+  list-style: none;
+}
+
+.tags li {
+  background-color: #5554;
+  padding: 0.2em 0.5em;
+  font-size: small;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 1em;
+}
+.post_div {
+  display: flex;
+  border-bottom: 1px solid #0004;
+  padding: 1rem;
+  /* gap: 0.3rem; */
+}
+.post_div > .text {
+  /* padding: 1rem; */
+  text-align: start;
+}
+.post_div > image,
+img {
+  width: 3.1rem;
+  /* padding: 1em; */
+}
+.footer {
+  background-color: #0004;
+  display: flex;
+  padding: 2rem;
+  /* justify-content:space-around; */
+  gap: 3rem;
+}
+.footer p {
+  background-color: #fff;
+  width: 5rem;
+  padding: 1rem;
+}
+@media screen and (max-width: 675px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .right-heading,
+  .left-heading{
+    width: 100%;
+  }
+  
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <button onclick="
+       const computerMove =pick();
+         let space='-----';
+         let out ='';
+         if(computerMove == ' rock'){
+            out =  'tie';            
+         }
+            else if (computerMove == ' paper'){
+            out = 'you lose';
+         }
+            else if(computerMove == ' scissor'){
+            out =  'you win';
+         }
+      alert(`you picked rock computer picked ${computerMove}.${space} ${out}`);
+        ">ROCK</button>
+
+
+
+        <button onclick="
+       let computerMove =pick();
+        
+         let out ='';
+         if(computerMove == ' rock'){
+            out =  'you win';            
+         }
+            else if (computerMove == ' paper'){
+            out = 'tie';
+         }
+            else if(computerMove == ' scissor'){
+            out =  'you loose';
+         }
+      alert(`you picked paper computer picked ${computerMove}.${space} ${out}`);
+        ">PAPER</button>
+
+
+
+
+
+
+        <button onclick="
+       const computerMove =pick();
+         let space='-----';
+         let out ='';
+         if(computerMove == ' rock'){
+            out =  'you loose';            
+         }
+            else if (computerMove == ' paper'){
+            out = 'you win';
+         }
+            else if(computerMove == ' scissor'){
+            out =  'tie';
+         }
+      alert(`you picked rock computer picked ${computerMove}.${space} ${out}`);
+        ">SCISSOR</button>
+
+
+
+    <!-- <button onclick="
+    cartQuality++
+    console.log(`cart quality : ${cartQuality}`);
+    ">add cart</button>
+    <button onclick="
+    cartQuality--
+    console.log(`cart quality : ${cartQuality}`);  
+    ">remove cart</button>
+    <button onclick="
+    cartQuality = 0;
+    console.log(`cart quality : ${cartQuality}`);
+
+    ">reset</button> -->
+
+         <script>
+      function pick(){
+          let choice = Math.random();
+        let computerMove ='';
+        
+        if(choice >= 0 && choice < 1/3){
+        computerMove = ' rock';
+        }
+        else if(choice >= 1/3 && choice < 2/3){
+        computerMove = ' paper';
+        }
+        else if(choice >= 2/3 && choice < 1){
+         computerMove = ' scissor';
+         }
+         console.log(computerMove);
+         
+         return computerMove;
+      }
+
+
+            
+         </script>
+</body>
+</html>

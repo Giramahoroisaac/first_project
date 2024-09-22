@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+}
+.logo {
+  width: 10%;
+  background-color: rgb(34, 198, 201);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.logo img {
+  width: 2.9em;
+  border-radius: 77%;
+}
+.nav {
+  background-color: rgb(34, 198, 201);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 70%;
+}
+.nav li {
+  list-style: none;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+.login {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 20%;
+  background-color: rgb(34, 198, 201);
+}
+.login li {
+  list-style: none;
+  display: inline;
+  padding: 1em;
+}
+.login a {
+  text-decoration: none;
+  color: white;
+}
+.login a:hover {
+  color: rgb(120, 25, 25);
+}
+.slide {
+  background-image: url(../image/pngtree-coding-nerd-a-computer-sporting-glasses-and-3d-programming-code-picture-image_5819254.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  flex-direction: column;
+  color: white;
+}
+.slide p{
+  padding:1em ;
+  color: white;
+}

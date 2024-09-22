@@ -1,0 +1,183 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f2f2f2;
+}
+
+img {
+  width: 100%;
+}
+
+.containe {
+  display: flex;
+}
+
+/* this is where div of containr ended */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: linear-gradient(#80ccff,#99d6ff,#b3e0ff,#ccebff);
+}
+
+/* this is where div of menu ended */
+
+.iterms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  gap: 2rem;
+}
+.iterms a {
+  color: white;
+  text-decoration: none;
+}
+.iterms a:hover {
+  /* background-color: blue; */
+  border-bottom: 4px solid #ffff;
+  /* transition: 0.3s; */
+
+}
+
+/* this is where div of iterms ended */
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.4rem;
+  gap: 2rem;
+}
+.login a {
+  color: white;
+  text-decoration: none;
+  background-color: #0004;
+  padding: 5px;
+
+  border-radius: 10%;
+}
+.login a:hover {
+  background-color: blue;
+}
+/* this is where div of login ended */
+
+.left {
+  width: 82%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  padding: 1rem;
+}
+.left .image {
+  width: 100%;
+  background-color: #ffff;
+}
+.description {
+  padding: 1rem;
+  background-color: #ffff;
+  box-shadow: 1px 1px 9px 1px #0004;
+}
+.service {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+.product {
+  width: 30%;
+  box-shadow: 1px 1px 9px 1px #0004;
+}
+.product img {
+  background-color: #ffff;
+}
+.product > .image {
+  padding: 0.4rem;
+}
+
+.text {
+  padding: 1rem;
+  background-color: #ffff;
+}
+
+/* this is where div of left ended */
+
+.right {
+  width: 18%;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  flex-direction: column;
+  gap: 2rem;
+}
+.advants {
+  margin-top: 1rem;
+  padding: 0.4rem;
+  box-shadow: 1px 1px 9px 1px #0004;
+  gap: 4rem;
+}
+
+/* this is where div of right ended */
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    background-color: #0004;
+    gap:2rem;
+}
+.r-side{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.l-side{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  
+
+}
+.l-side li{
+  display: flex;
+  list-style: none;
+  padding: .1rem;
+  font-size: 1rem;
+  color: black;
+  
+}
+.l-side , .l-iterm{
+  display: flex;
+  gap: 1.5rem;
+  
+}
+.r-side .l-iterm{
+  display: flex;
+  padding: .5rem;
+  /* border: 1px solid #ffff; */
+  gap: 1rem;
+  
+}
+.r-side  .image img{
+  display: flex;
+  justify-content: center;
+  align-items:  center;
+  height: 30px;
+  width: 30px;
+  /* background-color: #0004; */
+  border-radius: 50%;
+  width: 2rem;
+  padding: .2rem;
+}
